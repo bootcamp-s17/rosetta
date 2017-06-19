@@ -5,7 +5,7 @@
             <h4>Javascript</h4>
             <p>Classes are "special functions". Just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</p>
             <h5>Declarations</h5>
-            <p>Not "Hoisted"</p>
+            <p>Not "Hoisted", meaning order matters. Must be declared above where it is used. Normal functions are hoisted in that you can call them regardless of where in the code they are declared.</p>
             <p><em>Example:</em></p>
             
             <p>	<pre>
@@ -22,15 +22,20 @@ class Person {
 			<p>Contains a constructor that builds up the class members. Can also create functions that act on class members.</p>
 			<pre>
 			<code>
-	get bmi {
+	get bmi() {
 		return this.calcBMI();
 	}
 
-	calcBMI {
+	calcBMI() {
 		return this.weight/(this.height*this.height);
 	}
 				</code>
 				</pre>
+			<p>You can create new members of the class,</p> <code>var godzilla = new Person('Godzilla', 50, 148778297.36)</code> <p>and access the function with</p> <code>console.log(godzilla.bmi);</code>
+
+			<h5>Extends</h5>
+			<p> You can also carry over properties from another class. If you have a class <code>Kaiju</code> with property <code>isMonster = True;</code>. Then when you declare a new one, you use <code>class <em>godzilla</em> extends <em>kaiju</em></code>
+
         </div>
         <div class='col'>
             <h4>PHP</h4>
