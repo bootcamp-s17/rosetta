@@ -21,7 +21,7 @@
 
 <?php include 'control-structures.html'; ?>
 
-<?php include 'classes.html'; ?>clas
+<?php include 'classes.html'; ?>
 
 <?php include 'objects.html'; ?>
 
