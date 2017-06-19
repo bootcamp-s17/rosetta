@@ -1,1 +1,299 @@
+<div class="card-block">
+
+
 <h2>Operands</h2>
+
+<div class="card-block">
+
+<h3>Unitary Operators</h3>
+
+<div class="card-block">
+
+      <h4>Increment</h4>
+
+      <p>For x=10:</p>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">Pre-Iterator</td>
+		      <td>++$x</td>
+		      <td>++x</td>
+		      <td>++x</td>
+		      <td>10 (and then adds one)</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Post-Iterator</td>
+		      <td>$x++</td>
+		      <td>x++</td>
+		      <td>x++</td>
+		      <td>11</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Negative Pre-Iterator</td>
+		      <td>--$x</td>
+		      <td>--x</td>
+		      <td>--x</td>
+		      <td>10 (and then subracts one)</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Negative Post-Iterator</td>
+		      <td>$x--</td>
+		      <td>x--</td>
+		      <td>x--</td>
+		      <td>9</td>
+		    </tr>
+		  </tbody>
+		</table>
+</div>
+
+<h3>Binary Operators</h3>
+
+<div class="card-block">
+
+      <h4>Assignment</h4>
+
+      <p>For x=8, y=4:</p>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">Assign Value</td>
+		      <td>$x=$y</td>
+		      <td>x=y</td>
+		      <td>x=y</td>
+		      <td>x=4</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Add a Variable</td>
+		      <td>$x+=$y</td>
+		      <td>x+=y</td>
+		      <td>x+=y</td>
+		      <td>x=12</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Subtract a Variable</td>
+		      <td>$x-=$y</td>
+		      <td>x-=y</td>
+		      <td>x-=y</td>
+		      <td>x=4</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Multiply a Variable</td>
+		      <td>$x*=$y</td>
+		      <td>x*=y</td>
+		      <td>x*=y</td>
+		      <td>x=32</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Divide a Variable</td>
+		      <td>$x/=$y</td>
+		      <td>x/=y</td>
+		      <td>x/=y</td>
+		      <td>x=2</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Modulus a Variable</td>
+		      <td>$x%=$y</td>
+		      <td>x%=y</td>
+		      <td>x%=y</td>
+		      <td>x=0</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+</div>
+
+
+<div class="card-block">
+
+      <h4>String Operators</h4>
+      <p>Let text1 =  "Hello", text2 = "World"</p>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>PHP Example</th>
+		      <th>JS Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">Concatenation</td>
+		      <td>.</td>
+		      <td>+</td>
+		      <td>$text3 =$text1.$text2</td>
+		      <td>text3 = text1 + text2</td>
+		      <td>text3 = "HelloWorld"</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Concatenation Assignment </td>
+		      <td>.=</td>
+		      <td>+=</td>
+		      <td>$text1 .= $text2</td>
+		      <td>text1 += text2</td>
+		      <td>text1 = "HelloWorld"</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+</div>
+
+<div class="card-block">
+
+      <h4>Comparison Operators</h4>
+
+      <p>Let x=5</p>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>PHP Example</th>
+		      <th>JS Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">Equal</td>
+		      <td>==</td>
+		      <td>==</td>
+		      <td>$x == 5</td>
+		      <td>x ==5</td>
+		      <td>True</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Subtraction</td>
+		      <td>-</td>
+		      <td>-</td>
+		      <td>4-2</td>
+		      <td>2</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Multiplication</td>
+		      <td>*</td>
+		      <td>*</td>
+		      <td>3*3</td>
+		      <td>9</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Division</td>
+		      <td>/</td>
+		      <td>/</td>
+		      <td>12/6</td>
+		      <td>2</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Modulus</td>
+		      <td>%</td>
+		      <td>%</td>
+		      <td>10%9</td>
+		      <td>1</td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Exponentiation</td>
+		      <td>**</td>
+		      <td>**</td>
+		      <td>2**4</td>
+		      <td>16</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+</div>
+
+	<div class="card-block">
+
+      <h4>Arithmetic</h4>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">Addition</td>
+		      <td>+</td>
+		      <td>+</td>
+		      <td>2 + 4</td>
+		      <td>6</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Subtraction</td>
+		      <td>-</td>
+		      <td>-</td>
+		      <td>4-2</td>
+		      <td>2</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Multiplication</td>
+		      <td>*</td>
+		      <td>*</td>
+		      <td>3*3</td>
+		      <td>9</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Division</td>
+		      <td>/</td>
+		      <td>/</td>
+		      <td>12/6</td>
+		      <td>2</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Modulus</td>
+		      <td>%</td>
+		      <td>%</td>
+		      <td>10%9</td>
+		      <td>1</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Exponentiation</td>
+		      <td>**</td>
+		      <td>**</td>
+		      <td>2**4</td>
+		      <td>16</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+
+</div>
+
+</div>
+
+</div>
