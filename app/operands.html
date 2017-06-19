@@ -165,7 +165,7 @@
 
       <h4>Comparison Operators</h4>
 
-      <p>Let x=5</p>
+      <p>Let x=5 (the integer 5, not a string)</p>
 
       <table class="table table-striped">
 		  <thead>
@@ -184,52 +184,99 @@
 		      <td>==</td>
 		      <td>==</td>
 		      <td>$x == 5</td>
-		      <td>x ==5</td>
+		      <td>x == "5"</td>
+		      <td>True (True if string or integer)</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Identical</td>
+		      <td>===</td>
+		      <td>===</td>
+		      <td>$x === "5"</td>
+		      <td>x === "5"</td>
+		      <td>False (True if integer)</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Not Equal</td>
+		      <td>!=</td>
+		      <td>!=</td>
+		      <td>$x!=8</td>
+		      <td>x!=8</td>
 		      <td>True</td>
 		    </tr>
 		    <tr>
-		      <td scope="row">Subtraction</td>
-		      <td>-</td>
-		      <td>-</td>
-		      <td>4-2</td>
-		      <td>2</td>
-		      <td></td>
+		      <td scope="row">Not Equal (PHP)</td>
+		      <td><></td>
+		      <td>[none]</td>
+		      <td>$x<>dolphin</td>
+		      <td>[none]</td>
+		      <td>True</td>
 		    </tr>
 		    <tr>
-		      <td scope="row">Multiplication</td>
-		      <td>*</td>
-		      <td>*</td>
-		      <td>3*3</td>
-		      <td>9</td>
-		      <td></td>
-		    </tr>
-		    <tr>
-		      <td scope="row">Division</td>
-		      <td>/</td>
-		      <td>/</td>
-		      <td>12/6</td>
-		      <td>2</td>
-		      <td></td>
-		    </tr>
-		    <tr>
-		      <td scope="row">Modulus</td>
-		      <td>%</td>
-		      <td>%</td>
-		      <td>10%9</td>
-		      <td>1</td>
-		      <td></td>
-		    </tr>
-		    <tr>
-		      <td scope="row">Exponentiation</td>
-		      <td>**</td>
-		      <td>**</td>
-		      <td>2**4</td>
-		      <td>16</td>
+		      <td scope="row">Really Really Not Equal</td>
+		      <td>!==</td>
+		      <td>!==</td>
+		      <td>$x!=="5"</td>
+		      <td>x!=="5"</td>
+		      <td>True</td>
 		    </tr>
 		  </tbody>
 		</table>
 
 </div>
+
+ <h4>Logical Operators</h4>
+
+      <p>Let x=5 (the integer 5, not a string)</p>
+
+      <table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th>Operator</th>
+		      <th>PHP</th>
+		      <th>Javascript</th>
+		      <th>PHP Example</th>
+		      <th>JS Example</th>
+		      <th>Result</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td scope="row">And</td>
+		      <td>and / &&</td>
+		      <td>&&</td>
+		      <td>$x and 5</td>
+		      <td>x && 5</td>
+		      <td>True </td>
+		    </tr>
+		    <tr>
+		      <td scope="row">or</td>
+		      <td> or / ||</td>
+		      <td>||</td>
+		      <td>$x or $y = 5</td>
+		      <td>x || y = 5</td>
+		      <td>True </td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Xor</td>
+		      <td> xor</td>
+		      <td>[none]</td>
+		      <td> if x or y = 5 but not both</td>
+		      <td>[none]</td>
+		      <td>True</td>
+		    </tr>
+		    <tr>
+		      <td scope="row">Not Equal</td>
+		      <td>!</td>
+		      <td>!</td>
+		      <td> !$x</td>
+		      <td> x != y</td>
+		      <td>True</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+</div>
+
 
 	<div class="card-block">
 
