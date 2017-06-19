@@ -1,1 +1,39 @@
 <h2>Classes</h2>
+<div class='card-block'>
+    <div class="row">
+        <div class="col">
+            <h4>Javascript</h4>
+            <p>Classes are "special functions". Just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</p>
+            <h5>Declarations</h5>
+            <p>Not "Hoisted"</p>
+            <p><em>Example:</em></p>
+            
+            <p>	<pre>
+            	<code>
+class Person {
+	constructor(name, height, weight) {
+	    this.name = name;
+	    this.height = height;
+	    this.weight = weight;
+	  }
+}
+			</code>
+			</pre></p>
+			<p>Contains a constructor that builds up the class members. Can also create functions that act on class members.</p>
+			<pre>
+			<code>
+	get bmi {
+		return this.calcBMI();
+	}
+
+	calcBMI {
+		return this.weight/(this.height*this.height);
+	}
+				</code>
+				</pre>
+        </div>
+        <div class='col'>
+            <h4>PHP</h4>
+        </div>
+    </div>
+</div>
