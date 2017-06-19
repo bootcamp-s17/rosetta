@@ -1,6 +1,115 @@
 <h2>Scoping and Namespacing</h2>
 
 
-var 
 
-let
+
+<div class="card-block">
+
+  <div class="row">
+    <div class="col">
+      <h4>JavaScript</h4>
+
+      <p>JavaScript has two scopes: global and local. A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout your program. A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function. JavaScript does not support block scope (in which a set of braces {. . .} defines a new scope), except in the special case of block-scoped variables.</p>
+
+      <p><em>Example</em></p>
+
+      <code>// Scope A: Global scope out here<br/>
+      var myFunction = function () { <br/>
+        // Scope B: Local scope in here
+      };</code><br />
+      <br/>
+      
+
+     <p>A local variable can have the same name as a global variable, but it is entirely separate; changing the value of one variable has no effect on the other. Only the local version has meaning inside the function in which it is declared.</p>
+
+     <p>In JavaScript, an inner (nested) function stores references to the local variables that are present in the same scope as the function itself, even after the function returns. This set of references is called a closure. In the following example, the second call to the inner function outputs the same message ("Hello Bill") as the first call, because the input parameter for the outer function, <code>name</code>, is a local variable that is stored in the closure for the inner function.</p>
+
+     <p><em>Example</em></p>
+
+     <code>
+            function send(name) {  <br/>
+        // Local variable 'name' is stored in the closure  <br/>
+        // for the inner function.  <br/>
+        return function () {  <br/>
+            sendHi(name);<br/>
+        }  <br/>
+      }  <br/>
+
+      function sendHi(msg) {  <br/>
+        console.log('Hello ' + msg); <br/> 
+      }  <br/>
+
+      var func = send('Bill');  <br/>
+      func();  <br/>
+      // Output:  <br/>
+      // Hello Bill  <br/>
+      sendHi('Pete');  <br/>
+      // Output:  <br/>
+      // Hello Pete  <br/>
+      func();  <br/>
+      // Output:  <br/>
+      // Hello Bill<br/>
+     </code>
+      
+
+    </div>
+    <div class="col">
+      <h4>PHP</h4>
+      <h5>Local Variables</h5>
+
+      <p>A variable declared within a PHP function is local and can only be accessed within that function.
+      (the variable has local scope):</p>
+
+      <p><em>Example</em></p>
+
+      <code>
+      $a = 5; // global scope<br/>
+      function myTest()<br/>
+      {<br/>
+      echo $a; // local scope<br/>
+      }<br/>
+      myTest();<br/>
+      </code><br />    
+      <br/>
+
+      <h5>Global Variables</h5>
+      <p></p>Global scope refers to any variable that is defined outside of any function.
+      Global variables can be accessed from any part of the script that is not inside a function.
+      To access a global variable from within a function, use the global keyword:</p>
+      <p><em>Example</em></p>
+
+      <code>
+      $a = 5;<br/>
+      $b = 10;<br/>
+      function myTest()<br/>
+      {<br/>
+      global $a, $b;<br/>
+      $b = $a + $b;<br/>
+      }<br/>
+      myTest();</code><br />
+      <br/>
+
+
+      <h5>Static Variables</h5>
+
+      <p>When a function is completed, all of its variables are normally deleted. However, sometimes you
+      want a local variable to not be deleted.</p>
+      <p>To do this, use the static keyword when you first declare the variable:</p>
+      <code>static $rememberMe;</code><br/><br/>
+      <p>Then, each time the function is called, that variable will still have the information it contained
+      from the last time the function was called.</p>
+      <p>Note: The variable is still local to the function.</p>
+      <br/>
+   
+  
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
