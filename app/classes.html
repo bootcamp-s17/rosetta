@@ -37,7 +37,7 @@ class Person {
 			<p> You can also carry over properties from another class. If you have a class <code>Kaiju</code> with property <code>isMonster = True;</code>. Then when you declare a new one, you use <code>class <em>godzilla</em> extends <em>kaiju</em></code>
 
         </div>
-        <div class='col'>
+        <div class="col">
             <h4>PHP</h4>
             <p>Similar to JS, the PHP classes structure can be viewed as a "special function". The defined class holds definitions of the properties and methods belonging to that class.
             </p>
@@ -55,6 +55,38 @@ class SimpleClass{
 	}
 		</pre>
 		</code>
+		<p>
+		In the class below, variables are declared as private, protected, and publuc. These dictate where these attributes can be altered, or functions called:
+		<ul>
+		<li> Public: Can be called anywhere, outside of the class, inside the class, or even in a child. </li>
+		<li> Protected: Can be called from only within the current class or any children of that class (eg: gender can be altered by Person or Man) </li>
+		<li> Private: Can only be called by the containing class. (eg: alive can only be altered by Person) </li>
+		</ul>
+
+		</br>
+		Calling a constructor in PHP is slightly different as well. __construct() defines the class properties that will be manipulated. In addition, just as JS extends to another class to allow these properties to be used elsewhere, PHP uses the same method to allow the class Man, to use the properties in the class Person, even the private ones. 
+
+		</p>
+
+		<pre>
+		<code>
+
+class Person {
+    private $alive = true;
+
+    protected $gender = '';
+    protected $genitalOrgan = ''; 
+}
+
+class Man extends Person {
+    public function __construct(){
+        $this->gender = 'male';
+        $this->genitalOrgan = 'penis';
+    }
+}
+
+		</code>
+		</pre>
 
         </div>
     </div>
