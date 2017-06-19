@@ -16,6 +16,8 @@
 
 <h1>PHP/JS Rosetta Project</h1>
 
+<?php include 'versions.html'; ?>
+
 <?php include 'variables.html'; ?>
 
 <?php include 'operands.html'; ?>
