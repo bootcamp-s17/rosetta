@@ -1,1 +1,74 @@
-<h2>Objects</h2>
+<div class="card-block">
+	<h2>Objects</h2>
+	
+	<div class="card-block">
+		<h3>Declarations</h3>
+		<div class="card-block">
+			<div class="row">
+				<div class="col">
+					<h4>Javascript</h4>
+					<p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions --- which are called properties and methods when they are inside objects.) an object is made up of multiple members, each of which have a name and a value. Each name/value pair must be separated by a comma, and the name and value in each case are separated by a colon. The syntax always follows this pattern.</p>
+					<p><em>Example</em></p>
+					<code>var person = {firstName: 'Elton', lastName: 'Cheng', profession: 'Sensei'}</code><br /><br />
+					<p>The object defined as <code>person</code> contains three names and three matching values.</p><br />
+					<table class="table table-inverse">
+						<thead>
+							<tr>
+								<th>Key</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>firstName</td>
+								<td>Elton</td>
+							</tr>
+							<tr>
+								<td>lastName</td>
+								<td>Cheng</td>
+							</tr>
+							<tr>
+								<td>profession</td>
+								<td>Sensei</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<p>Each key can be referenced separately by using object/method syntax with a period between the objectName and the methodName or separating brackets to reference values of names, like so: <code>objectName.methodName</code></p><br />
+					<p><em>Example</em></p>
+					<code>name = person.firstName // Elton</code><br />
+					<code>profession = person['profession'] // Sensei</code><br /><br />
+
+					<p>For more information on Javascript Objects <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">click here</a>.</p>
+				</div>
+				<div class="col">
+					<h4>PHP</h4>
+					<p>An object is a data type which stores data and information on how to process that data. In PHP, an object must be explicitly declared. First must declare a class of object. For this we use the class keyword. A class is a structure that can contain properties and methods.</p>.<br />
+					<p><em>Example</em></p>
+					<pre><code>
+	class Person {
+		   function Person() {
+	        $this->firstName = "Elton";
+	        $this->lastName = "Cheng";
+	        $this->profession = "Sensei";
+	    }
+	}
+	// create an object
+	$guy = new Person();
+	// show object properties
+	echo $guy->firstName; // Elton
+					</code></pre>
+					<p>Each property within a class can be referenced using the <code>-></code> contstruct that accesses the contained properties like so: <code>objectName->property</code></p><br />
+					<p><em>Example</em></p>
+					<code>$person->firstName // Elton</code><br />
+					<code>$person->profession // Sensei</code><br />
+					<p>To make the use of objects easier, PHP also provides a number of <strong>magic methods</strong>, or special methods that are called when certain common actions occur within objects. This allows developers to perform a number of useful tasks with relative ease.</p>
+					<p><em>Example</em></p>
+					<code>__construct()</code><br />
+					<code>__destruct()</code><br /><br />
+					<p>For more information on magic methods and PHP Objects <a href="https://code.tutsplus.com/tutorials/object-oriented-php-for-beginners--net-12762">click here</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
