@@ -20,7 +20,7 @@
 
 <?php include 'variables.html'; ?>
 
-<?php include 'operands.html'; ?>
+<?php include 'operators.html'; ?>
 
 <?php include 'control-structures.html'; ?>
 
@@ -29,6 +29,8 @@
 <?php include 'objects.html'; ?>
 
 <?php include 'scoping-namespacing.html'; ?>
+
+<?php include 'dependencies.html'; ?>
 
 </div>
 </body>
